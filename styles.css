@@ -45,3 +45,47 @@ table {
 
 /* End Reset */
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Noto Sans JP";
+    font-size: 1.6rem;
+}
+
+header {
+    background-color: #f1f3f8;
+    padding: 1.5%;
+}
+
+nav {
+    padding: 1%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: #d6e0f0;
+    border-radius: 10px;
+    padding: .5%;
+    color: #393b44;
+}
+
+nav a:hover {
+    background-color: #393b44;
+    color: #d6e0f0;
+}
+
+h1, h2 {
+    font-family: "Fredericka the Great";
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
