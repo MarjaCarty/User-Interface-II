@@ -83,7 +83,7 @@ nav a:hover {
     color: #d6e0f0;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: "Fredericka the Great";
 }
 
@@ -121,3 +121,24 @@ h2 {
     font-family: "Noto Sans JP";
     font-size: 1.6rem;
 }
+
+/* Gallery Styling */
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.gallery1, .gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.gallery1 div img, .gallery2 div img {
+    width: 300px;
+    padding: 3%;
+}
+
+/* Footer Styling */
