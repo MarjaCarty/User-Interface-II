@@ -49,6 +49,11 @@ table {
 html {
     font-size: 62.5%;
     max-width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Fredericka the Great";
 }
 
 body {
@@ -69,22 +74,18 @@ nav {
     padding: 1%;
 }
 
-nav a {
+a {
     text-decoration: none;
     font-size: 2rem;
     background-color: #d6e0f0;
     border-radius: 10px;
-    padding: .5%;
+    padding: .7%;
     color: #393b44;
 }
 
-nav a:hover {
+a:hover, .active {
     background-color: #393b44;
     color: #d6e0f0;
-}
-
-h1, h2, h3, h4 {
-    font-family: "Fredericka the Great";
 }
 
 h1 {
@@ -100,7 +101,6 @@ h2 {
 .content {
     display: flex;
     align-items: center;
-    padding: 3%;
     width: 100%;
 }
 
@@ -110,18 +110,15 @@ h2 {
 
 .content div {
     width: 30%;
+    padding: 2%;
 }
 
-.content button {
-    border: none;
+.content div a {
     padding: 3%;
-    margin: 3% 0;
-    background-color: #d6e0f0; 
-    color: #393b44;
-    border-radius: 10px;
-    font-family: "Noto Sans JP";
-    font-size: 1.6rem;
+    display: inline-block;
+    margin: 1% 0;
 }
+
 
 /* Gallery Styling */
 
@@ -140,6 +137,13 @@ h3, h4 {
 .gallery1 div img, .gallery2 div img {
     width: 400px;
     padding: 3%;
+    border: 4px solid #393b44;
+}
+
+.gallery1 div img:hover, .gallery2 div img:hover {
+    background-color: #393b44;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 /* Footer Styling */
@@ -154,14 +158,6 @@ footer {
     height: 30vh;
 }
 
-footer button {
-    border: none;
-    padding: 1%;
+footer a {
     margin: 1%;
-    background-color: #d6e0f0; 
-    color: #393b44;
-    border-radius: 10px;
-    font-family: "Noto Sans JP";
-    font-size: 1.6rem;
-    width: 10%;
 }
