@@ -187,9 +187,14 @@ footer .icon a img {
 
 /* Tablet Styles */
 @media (max-width: 800px) {
+    header nav a {
+        padding: 2%;
+    }
+
     .content {
         flex-wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .content img {
@@ -197,10 +202,11 @@ footer .icon a img {
     }
 
     .content div {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 1%;
     }
 
     .gallery {
@@ -210,4 +216,38 @@ footer .icon a img {
 }
 
 /* Phone Styles */
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 2% 0;
+        padding: 3%;
+    }
+    
+    .content {
+        justify-content: center;
+    }
+
+    .content div {
+        width: 80%;
+    }
+
+    .gallery div img {
+        width: 300px;
+    }
+
+    footer a {
+        padding: 3%;
+    }
+}
