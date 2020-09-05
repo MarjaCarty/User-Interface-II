@@ -72,6 +72,15 @@ body {
 
 /* Header Styles */
 
+.skip-link {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+} 
+
 header {
     background-color: #f1f3f8;
     padding: 1.5%;
@@ -187,6 +196,10 @@ footer .icon a img {
 
 /* Tablet Styles */
 @media (max-width: 800px) {
+    h1 {
+        margin: 2% 0;
+    }
+    
     header nav a {
         padding: 2%;
     }
@@ -255,5 +268,9 @@ footer .icon a img {
 
     footer a {
         padding: 3%;
+    }
+
+    footer .icon a img {
+        width: 50px;
     }
 }
